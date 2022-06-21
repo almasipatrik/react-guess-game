@@ -1,0 +1,36 @@
+@import "../colors.module.scss";
+
+.button {
+  width: 280px;
+  height: 60px;
+
+  border: 1px solid $white;
+  border-radius: 48px;
+  text-transform: uppercase;
+
+  color: $white;
+  background-color: transparent;
+
+  &:not(:disabled, :hover) {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 30px;
+  }
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  transition: all 0.3s ease-out;
+
+  &:disabled {
+    background-color: $disabled;
+    border: 1px solid $disabled;
+    cursor: not-allowed;
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover:not(:disabled) {
+    color: $primary;
+    cursor: pointer;
+    background-color: $white;
+    transition: all 0.3s ease-out;
+  }
+}

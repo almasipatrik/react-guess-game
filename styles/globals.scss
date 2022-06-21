@@ -1,0 +1,148 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "SF";
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  height: 57px;
+  background: #bbbbbb;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adadad;
+}
+
+.main {
+  min-height: 100vh;
+  max-width: 960px;
+  padding: 4rem 0;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+  padding: 0 2rem;
+  background: linear-gradient(
+    232deg,
+    rgba(56, 61, 143, 1) 0%,
+    rgba(107, 118, 242, 1) 100%
+  );
+}
+
+.textWrapper {
+  margin: 20px 0;
+  min-height: 270px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .description {
+    max-width: 386px;
+  }
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+
+p {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Thin.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 200;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Ultralight.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Light.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Medium.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Semibold.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Bold.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 800;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Heavy.otf");
+}
+
+@font-face {
+  font-family: "SF";
+  font-weight: 900;
+  font-style: normal;
+  src: url("/assets/fonts/SFUIDisplay-Black.otf");
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../colors.module.scss";
+
+.textField {
+  width: 100%;
+  max-width: 368px;
+  border-radius: 30px;
+
+  & fieldset {
+    border: 1px solid $white;
+    border-radius: 30px;
+  }
+
+  & input {
+    color: $primary;
+    background-color: $white;
+    border: 1px solid $white;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.563rem;
+    font-weight: 700;
+    height: 25px;
+
+    &::placeholder {
+      font-size: 1.563rem;
+      font-family: "SF";
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textField {
+    & input {
+      font-size: 1.563rem;
+
+      &::placeholder {
+        font-size: 1.2rem;
+        font-family: "SF";
+      }
+    }
+  }
+}

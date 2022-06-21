@@ -1,0 +1,24 @@
+.guesses {
+  display: flex;
+  width: 100%;
+  max-height: 300px;
+  max-width: 560px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.guess {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .guesses {
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.random {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

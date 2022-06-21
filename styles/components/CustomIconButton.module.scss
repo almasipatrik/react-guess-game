@@ -1,0 +1,44 @@
+.button {
+  width: 100%;
+  max-width: 192px;
+  height: 50px;
+  margin: 0 auto;
+
+  border-radius: 37px;
+  background: linear-gradient(
+    270deg,
+    rgba(56, 61, 143, 1) 0%,
+    rgba(107, 118, 242, 1) 100%
+  );
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.39);
+
+    border: none;
+
+    .img {
+      filter: brightness(1);
+    }
+  }
+}
+
+.img {
+  filter: invert(25%) sepia(95%) saturate(4791%) hue-rotate(210deg)
+    brightness(92%) contrast(93%);
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    max-width: 120px;
+    height: 40px;
+  }
+
+  .img {
+    height: 30px;
+    width: 30px;
+
+    filter: brightness(100%);
+  }
+}
